@@ -26,7 +26,6 @@ class Server {
       express.static(path.join(__dirname, "../../client/build"))
     );
     */
-
   }
 
   // Bind controllers to routes
