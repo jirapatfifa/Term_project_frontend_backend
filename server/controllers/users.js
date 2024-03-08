@@ -87,7 +87,7 @@ function saveUserData(userData) {
   */
 
   //สำหรับ database: 'term_project_db'
-  const sql = `INSERT INTO users (name_title, name_first, name_last, email, username, password, picture_large) 
+  const sql = `INSERT INTO users (gender, title, first, last, country, email, dob, uuid, username, password, md5, sha1, sha256, picture_large, picture_mdium, picture_thumbnail) 
 VALUES (?, ?, ?, ?, ?, ?, ?)`; //ต้องเพิ่ม column ให้ครบตามที่กำหนดไว้
 
   let values = [title, first, last, email, username, password, large];
