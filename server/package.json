@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "Web application to showcase how to integrate React, Node.js and Express. Full explanation and guide available on Medium.",
   "main": "app.js",
-  "proxy": "http://api-user66006.se-rmutl.net",
   "scripts": {
-    "start": "node app --openssl-legacy-provider",
+    "start": "node app",
     "server": "nodemon",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
