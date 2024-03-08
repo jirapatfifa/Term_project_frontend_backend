@@ -90,7 +90,7 @@ function saveUserData(userData) {
   const sql = `INSERT INTO users (gender, title, first, last, country, email, dob, uuid, username, password, md5, sha1, sha256, picture_large, picture_mdium, picture_thumbnail) 
 VALUES (?, ?, ?, ?, ?, ?, ?)`; //ต้องเพิ่ม column ให้ครบตามที่กำหนดไว้
 
-  let values = [title, first, last, email, username, password, large];
+  let values = [gender, title, first, last, country, email, dob, uuid, username, password, md5, sha1, sha256, pricture_large, picture_mdium, picture_thumbnail,];
   let sql_res;
 
   return new Promise((resolve, reject) => {
